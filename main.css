@@ -1,0 +1,170 @@
+/**
+ * @name Unhurting Theme
+ * @author WickedWizard, CrenVision, and ClearVision
+ * @version 1
+ * @description A specially designed theme that doesn't hurt your eyes.
+ * @source https://github.com/WickedWizard3588/Unhurting-theme
+ * @license MIT
+ */
+
+@import url("https://crenshaw1312.github.io/CrenVision/main.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://raw.githack.com/Controlfreak707/Channel-Icons/main/channelicons.theme.css");
+@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
+@import url("https://nyri4.github.io/Discolored/main.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+	--main-color: rgba(0, 0, 0, 0);
+	--hover-color: rgba(255, 255, 255, 0.337);
+	--success-color: #43b581;
+	--danger-color: #982929;
+	--interactive-active: pink;
+	--interactive-normal: var(--headers-base-color);
+	--url-color: rgb(187, 168, 255);
+	--main-image: url("https://i.imgur.com/bf1ZZhK.png");
+	--headers-base-color: rgb(255, 255, 255);
+
+	--bubble-color: var(--main-color);
+	--bubble-radius-big: 20px;
+	--bubble-radius-small: 10px;
+
+	--background-image: var(--main-image);
+	--background-shading: 20%;
+	--background-position: center;
+	--background-size: cover;
+	--background-repeat: no-repeat;
+	--background-attachment: fixed;
+	--background-brightness: 50%;
+	--background-contrast: 100%;
+	--background-saturation: 100%;
+	--background-grayscale: 10%;
+	--background-invert: 5%;
+	--background-blur: 0px;
+	--background-overlay: var(--main-color);
+
+	--user-popout-image: var(--background-image);
+	--user-popout-position: var(--background-position);
+	--user-popout-size: var(--background-size);
+	--user-popout-repeat: var(--background-repeat);
+	--user-popout-position: center;
+	--user-popout-size: cover;
+	--user-popout-repeat: no-repeat;
+	--user-popout-attachment: fixed;
+	--user-popout-brightness: 100%;
+	--user-popout-contrast: 200%;
+	--user-popout-saturation: 150%;
+	--user-popout-grayscale: 70%;
+	--user-popout-invert: 10%;
+	--user-popout-blur: 0px;
+	--user-popout-avatar-size: 95px;
+	--user-popout-avatar-position-x: 32%;
+	--user-popout-avatar-position-y: 5.5% !important;
+
+	--user-modal-image: var(--background-image);
+	--user-modal-position: var(--background-position);
+	--user-modal-size: var(--background-size);
+	--user-modal-repeat: var(--background-repeat);
+	--user-modal-position: center;
+	--user-modal-size: cover;
+	--user-modal-repeat: no-repeat;
+	--user-modal-attachment: fixed;
+	--user-modal-brightness: 75%;
+	--user-modal-contrast: 100%;
+	--user-modal-saturation: 100%;
+	--user-modal-grayscale: 10%;
+	--user-modal-invert: 0%;
+	--user-modal-blur: 0px;
+	--user-modal-avatar-size: 200px;
+	--user-modal-avatar-position-x: 35%;
+	--user-modal-avatar-position-y: -6.5vh !important;
+	--user-modal-banner-opacity: .75;
+	--user-modal-banner-blur: blur(2.6px);
+
+	--backdrop-overlay: none;
+	--backdrop-image: var(--main-image);
+	--backdrop-position: var(--background-position);
+	--backdrop-size: var(--background-size);
+	--backdrop-repeat: var(--background-repeat);
+	--backdrop-attachment: var(--background-attachment);
+	--backdrop-brightness: 75%;
+	--backdrop-contrast: 75%;
+	--backdrop-saturation: 100%;
+	--backdrop-invert: 0%;
+	--backdrop-grayscale: 5%;
+	--backdrop-sepia: 0%;
+	--backdrop-blur: 2px;
+
+	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg);
+	--home-position: center;
+	--home-size: calc(var(--HSL-server-icon-size) * 1.5);
+
+	--channel-unread: var(--url-color);
+	--channel-color: rgb(255, 255, 255);
+	--channel-background-selected: var(--main-color);
+	--channel-text-selected: hotpink;
+	--muted-color: rgba(255, 255, 255, 0.349);
+
+	--online-color: #43b581;
+	--idle-color: #faa61a;
+	--dnd-color: #982929;
+	--streaming-color: #593695;
+	--offline-color: #808080;
+
+	--main-font: "Montserrat";
+	--text-normal: rgba(160, 157, 157, 0.75);
+	--text-muted: rgba(128, 128, 128, 0.281);
+	--watermark-override: "Hewwo, Wicked";
+
+	--message-mentioned-color: rgba(235, 105, 96, 100);
+	--message-personal-color: rgba(89, 0, 255, 0.35);
+	--message-other-color: rgba(34, 34, 34, 0.253);
+	--message-hover-color: rgba(255, 192, 203, 0.226);
+	--message-max-width: 400px;
+	--chat-username-pill-color-other: var(--message-other-color);
+
+	--channels-width: 225px;
+	--members-width: 250px;
+	--container: 40px;
+	--server-container-padding: 200px;
+	--sticker-size: 75px;
+	--server-unread: var(--url-color);
+
+	--HSL-server-icon-size: 27px;
+	--HSL-server-spacing: 10px;
+
+	--rs-small-spacing: 2px;
+	--rs-medium-spacing: 3px;
+	--rs-large-spacing: 4px;
+	--rs-small-width: 2px;
+	--rs-medium-width: 3px;
+	--rs-large-width: 4px;
+	--rs-avatar-shape: 30%;
+	--rs-online-color: var(--online-color);
+	--rs-idle-color: var(--idle-color);
+	--rs-dnd-color: var(--dnd-color);
+	--rs-offline-color: var(--offline-color);
+	--rs-streaming-color: var(--streaming-color);
+	--rs-invisible-color: var(--offline-color);
+	--rs-phone-visible: block;
+
+	--toast-background: var(--bubble-color) !important;
+	--toast-header: var(--toast-background) !important;
+	--toast-contents: rgba(0, 0, 0, 0.25) !important;
+	--toast-box-shadow: var(--hover-color) !important;
+	--toast-border: var(--hover-color) !important;
+
+	--chatbar-color: rgba(150, 122, 122, 0.337);
+}
+
+.channelTextArea-2VhZ6z .scrollableContainer-2NUZem {
+	border: 2px solid;
+}
+
+.item-2hkk8m {
+	background-color: #7289da;
+}
+
+[aria-label="Member List"], [aria-label ^="Mute channel"] {
+	display: initial;
+}
