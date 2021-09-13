@@ -1,18 +1,26 @@
 /**
  * @name Unhurting Theme
  * @author WickedWizard, CrenVision, and ClearVision
- * @version 1
+ * @version 1.0.1
+ * @authorId 719421577086894101
  * @description A specially designed theme that doesn't hurt your eyes.
  * @source https://github.com/WickedWizard3588/Unhurting-theme
+ * @updateURL https://raw.githubusercontent.com/WickedWizard3588/Unhurting-theme/master/main.css
  * @license MIT
  */
 
-@import url("https://crenshaw1312.github.io/CrenVision/main.css");
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
-@import url("https://raw.githack.com/Controlfreak707/Channel-Icons/main/channelicons.theme.css");
-@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
-@import url("https://nyri4.github.io/Discolored/main.css");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Required */
+@import url('https://clearvision.gitlab.io/v6/main.css');
+@import url('https://crenshaw1312.github.io/CrenVision/base.css');
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* You can add or remove imports, as per your need */
+@import url('https://raw.githack.com/Controlfreak707/Channel-Icons/main/channelicons.theme.css');
+@import url('https://discordstyles.github.io/AdjustableServerWidth/base.css');
+@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+@import url('https://discord-theme-addons.github.io/snippets/voicechat-bg/index.css');
 
 :root {
 	--main-color: rgba(0, 0, 0, 0);
@@ -22,7 +30,7 @@
 	--interactive-active: pink;
 	--interactive-normal: var(--headers-base-color);
 	--url-color: rgb(187, 168, 255);
-	--main-image: url("https://i.imgur.com/bf1ZZhK.png");
+	--main-image: url('https://i.imgur.com/bf1ZZhK.png');
 	--headers-base-color: rgb(255, 255, 255);
 
 	--bubble-color: var(--main-color);
@@ -95,7 +103,7 @@
 	--backdrop-sepia: 0%;
 	--backdrop-blur: 2px;
 
-	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg);
+	--home-icon: url('https://clearvision.gitlab.io/icons/discord.svg');
 	--home-position: center;
 	--home-size: calc(var(--HSL-server-icon-size) * 1.5);
 
@@ -111,12 +119,12 @@
 	--streaming-color: #593695;
 	--offline-color: #808080;
 
-	--main-font: "Montserrat";
+	--main-font: 'Montserrat';
 	--text-normal: rgba(160, 157, 157, 0.75);
 	--text-muted: rgba(128, 128, 128, 0.281);
-	--watermark-override: "Hewwo, Wicked";
+	--watermark-override: 'Hewwo, Wicked';
 
-	--message-mentioned-color: rgba(235, 105, 96, 100);
+	--message-mentioned-color: rgba(135, 18, 72, 25);
 	--message-personal-color: rgba(89, 0, 255, 0.35);
 	--message-other-color: rgba(34, 34, 34, 0.253);
 	--message-hover-color: rgba(255, 192, 203, 0.226);
@@ -148,13 +156,11 @@
 	--rs-invisible-color: var(--offline-color);
 	--rs-phone-visible: block;
 
-	--toast-background: var(--bubble-color) !important;
-	--toast-header: var(--toast-background) !important;
-	--toast-contents: rgba(0, 0, 0, 0.25) !important;
-	--toast-box-shadow: var(--hover-color) !important;
-	--toast-border: var(--hover-color) !important;
-
 	--chatbar-color: rgba(150, 122, 122, 0.337);
+
+	--vcb-image: url('https://cdn.vox-cdn.com/thumbor/8OLcqMqbLR7Hwv91eodAB1Q94pU=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19816263/acastro_200318_1777_discord_0001.0.jpg');
+    --vcb-background: rgb(0, 0, 0, 0.45);
+    --vcb-blur: 4px;
 }
 
 .channelTextArea-2VhZ6z .scrollableContainer-2NUZem {
@@ -165,6 +171,6 @@
 	background-color: #7289da;
 }
 
-[aria-label="Member List"], [aria-label ^="Mute channel"] {
+[aria-label ^='Mute channel'] {
 	display: initial;
 }
